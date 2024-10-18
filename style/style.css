@@ -4,4 +4,134 @@
   margin: 0px auto;
 }
 
+#container {
+  display: flex;
+  width: 460px;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+#container #calculatorBase {
+  display: flex;
+  width: 390px;
+  height: 555px;
+  padding: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 30px;
+  background: #F4D9D0;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#container #calculatorBase #calculatorDisplay {
+  display: flex;
+  width: 350px;
+  height: 144px;
+  padding: 0px 20px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: rgba(199, 91, 122, 0.61);
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#container #calculatorBase #calculatorDisplay #displayNumber {
+  color: #921A40;
+  font-family: "Anton SC";
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+#container #calculatorBase #calculatorKeys {
+  width: 390px;
+  height: 391px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+#container #calculatorBase #calculatorKeys .key {
+  display: flex;
+  width: 83px;
+  height: 61.528px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #D9ABAB;
+  border: none;
+  outline: none;
+  color: #921A40;
+  font-family: poppins;
+  font-size: 18px;
+}
+#container #calculatorBase #calculatorKeys .big {
+  width: 83px;
+  height: 144px;
+}
+#container #calculatorBase #calculatorKeys .cac {
+  order: 1;
+}
+#container #calculatorBase #calculatorKeys .c7 {
+  order: 2;
+}
+#container #calculatorBase #calculatorKeys .c4 {
+  order: 3;
+}
+#container #calculatorBase #calculatorKeys .c1 {
+  order: 4;
+}
+#container #calculatorBase #calculatorKeys .c {
+  order: 5;
+}
+#container #calculatorBase #calculatorKeys .cmultiply {
+  order: 6;
+}
+#container #calculatorBase #calculatorKeys .c8 {
+  order: 7;
+}
+#container #calculatorBase #calculatorKeys .c5 {
+  order: 8;
+}
+#container #calculatorBase #calculatorKeys .c2 {
+  order: 9;
+}
+#container #calculatorBase #calculatorKeys .c0 {
+  order: 10;
+}
+#container #calculatorBase #calculatorKeys .csplit {
+  order: 11;
+}
+#container #calculatorBase #calculatorKeys .c9 {
+  order: 12;
+}
+#container #calculatorBase #calculatorKeys .c6 {
+  order: 13;
+}
+#container #calculatorBase #calculatorKeys .c3 {
+  order: 14;
+}
+#container #calculatorBase #calculatorKeys .cpoint {
+  order: 15;
+}
+#container #calculatorBase #calculatorKeys .csubtract {
+  order: 16;
+}
+#container #calculatorBase #calculatorKeys .cplus {
+  order: 17;
+}
+#container #calculatorBase #calculatorKeys .cequal {
+  order: 18;
+}
+#container footer p {
+  font-family: poppins;
+}
+
 /*# sourceMappingURL=style.css.map */
