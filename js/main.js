@@ -1,9 +1,15 @@
-let display = document.querySelector("#displayNumber")
+//* Cambia el numero dependiendo del boton seleccionado
 
-let num8 = document.querySelector(".c8")
+let display = document.querySelector("#displayNumber");
 
-let llamar = num8.addEventListener("click", ()=>{
-    let valor = num8.value
+let numbers = document.querySelectorAll(".numbers");
 
-    return display.textContent = valor
-})
+let diplayNumber = numbers.forEach((number) => {
+    number.addEventListener("click", ()=>{
+        let value = number.value
+
+        display.textContent = value
+    })
+});
+
+
