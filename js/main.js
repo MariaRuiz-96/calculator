@@ -16,8 +16,18 @@ let diplayNumber = numbers.forEach((number) => {
             display.textContent = firstNumber;
         }else{
             secondNumber += value
-            display.textContent = firstNumber;
+            display.textContent = secondNumber;
         }
     })
 });
 
+let operator = "";
+
+let operators = document.querySelectorAll(".operator");
+let operatorsSelect = operators.forEach((op)=>{
+    op.addEventListener("click", ()=>{
+        if(firstNumber === "") return;
+        operator = op.value 
+        isOperatorSelect=true
+    })
+})
