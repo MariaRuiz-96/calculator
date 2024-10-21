@@ -54,5 +54,35 @@ decimalButton.addEventListener("click", () => {
     }
 });
 
+function operate(ope, a, b){
+    a=parseFloat(firstNumber)
+    b=parseFloat(secondNumber)
+    switch(ope){
+        case "+":
+            return a + b
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return b !== 0 ? a / b : "Error: División por 0";
+        default:
+            return "Operación no válida";
+    }
+}
 
+//* Botón de igual
+let equalButton = document.querySelector(".cequal");
 
+equalButton.addEventListener("click", () => {
+    if (firstNumber === "" || secondNumber === "" || operator === "") return;
+
+    let result = operate(operator, firstNumber, secondNumber);
+    display.textContent = result;
+
+    // Reiniciar las variables para una nueva operación
+    firstNumber = result; // Guarda el resultado como el primer número para nuevas operaciones
+    secondNumber = "";
+    isOperatorSelect = false;
+    operator = "";
+});
