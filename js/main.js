@@ -81,8 +81,19 @@ equalButton.addEventListener("click", () => {
     display.textContent = result;
 
     // Reiniciar las variables para una nueva operación
-    firstNumber = result; // Guarda el resultado como el primer número para nuevas operaciones
+    firstNumber = result;
     secondNumber = "";
     isOperatorSelect = false;
     operator = "";
 });
+
+let AC = document.querySelector(".cac");
+
+AC.addEventListener("click", ()=> {
+    display.textContent = "0";
+    
+    firstNumber = "";
+    secondNumber = "";
+    isOperatorSelect = false;
+    operator = "";
+})
